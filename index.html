@@ -1,38 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProFit</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
-    <meta name="theme-color" content="#712cf9">
-    <link rel="style" type="text/css">
+    <title>Dev Jô Bclr</title>
+    <style>
+        body{
+            background-color: #00a8ff;
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding-bottom: 0px;
+        }
+
+        .nav-bar1{
+            background-color:rgb(222, 222, 222);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin:0;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .nav-bar1{
+            display: block;
+            align: center;
+        }
+        .menu1{
+    position: fi;
+    display: inline;
+    float: center;
+    width: 5px;
+    height: 50px;
+        }
+        .capa1{
+            width: 100px;
+            height: 100px;
+            z-index: 1;
+            float: center;
+
+        }
+        .itemli{
+            list-style: none
+        }
+        .box{
+            background-color: #01406E;
+            height: 250px;
+            width: 450px;
+            z-index: 2;
+        }
+        .menuFoot1{
+            text-align:end;
+            margin: 0px;
+            display: inline;
+        }
+        .menuFoot2{
+            text-align:start;
+            margin: 0px;
+        }
+
+        footer{
+            background-color: #04253C;
+            font-family: 'Courier New', Courier, monospace;
+            color:white;
+            margin:0;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    </style>
+
 </head>
 <body>
-    <main id="Headers_examples">
-        <h1 class="visually-hidden">ProFit</h1>
-      
-        <div class="container">
-          <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-              <span class="fs-4">Headers examples</span>
-            </a>
-      
-            <ul class="nav nav-pills">
-              <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Inicio</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Endereço</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Planos</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Perguntas frequentes</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
+    <section class="nav-bar1">
+        <ul>
+            <li>Inicio</li>
+            <li>Projetos</li>
+            <li>Contato</li>
+            <li>CV</li>
+            <li>LinkedIn</li>
+        </ul>
+    </section>
+    
+    <section class="capa1">
+        <img src="/img/perfil.jpeg">
+        <h1>Projetos Recentes</h1>
+    </section>
+    <section class="menu1">
+        <img src="/img/perfil.jpeg">
+        <img src="/img/perfil.jpeg">
+        <img src="/img/perfil.jpeg">
+        <img src="/img/perfil.jpeg">
+        <img src="/img/perfil.jpeg">
+    </section>
+    
+    <section class="formulario">
+        <div class="box"></div>
+        <img src="/img/carta.png" alt="Area de envio de comunicado ao programador">
+        <form action="/pagina-processa-dados-do-form" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="number" id="telefone" name="telefone" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <ul>
+            <ul class="menuFoot">
+                <li class="itemli">Contato</li>
+                <li class="itemli">Projetos</li>
+                <li class="itemli">Me siga para mais</li>
+                <li class="itemli">LinkedIn</li>
             </ul>
-          </header>
-        </div>
+            <ul class="menuFoot1">
+                <li class="itemli">Desenvolvido por Josias Bacelar</li>
+                <li class="itemli">Todos os direiros reservados  Jo Bacelar c 2024</li>
+            </ul>
+        </ul>
+        
+    </footer>
 </body>
 </html>
